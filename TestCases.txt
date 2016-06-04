@@ -1,0 +1,163 @@
+Test Case 0:
+I $10 $50 $1
+$10 - 10
+$50 - 10
+$1 - 10
+W $45
+Success: Dispensed $45
+Machine Balance:
+$100 - 10
+$50 - 10
+$20 - 8
+$10 - 10
+$5 - 9
+$1 - 10
+W $40
+Success: Dispensed $40
+Machine Balance:
+$100 - 10
+$50 - 10
+$20 - 6
+$10 - 10
+$5 - 9
+$1 - 10
+W $40
+Success: Dispensed $40
+Machine Balance:
+$100 - 10
+$50 - 10
+$20 - 4
+$10 - 10
+$5 - 9
+$1 - 10
+W $40
+Success: Dispensed $40
+Machine Balance:
+$100 - 10
+$50 - 10
+$20 - 2
+$10 - 10
+$5 - 9
+$1 - 10
+W $40
+Success: Dispensed $40
+Machine Balance:
+$100 - 10
+$50 - 10
+$20 - 0
+$10 - 10
+$5 - 9
+$1 - 10
+W $40
+Success: Dispensed $40
+Machine Balance:
+$100 - 10
+$50 - 10
+$20 - 0
+$10 - 6
+$5 - 9
+$1 - 10
+W $9
+Success: Dispensed $9
+Machine Balance:
+$100 - 10
+$50 - 10
+$20 - 0
+$10 - 6
+$5 - 8
+$1 - 6
+W $9
+Success: Dispensed $9
+Machine Balance:
+$100 - 10
+$50 - 10
+$20 - 0
+$10 - 6
+$5 - 7
+$1 - 2
+W $9
+Failure: Insufficient funds
+Machine Balance:
+$100 - 10
+$50 - 10
+$20 - 0
+$10 - 6
+$5 - 7
+$1 - 2
+R
+Machine Balance:
+$100 - 10
+$50 - 10
+$20 - 10
+$10 - 10
+$5 - 10
+$1 - 10
+W $9
+Success: Dispensed $9
+Machine Balance:
+$100 - 10
+$50 - 10
+$20 - 10
+$10 - 10
+$5 - 9
+$1 - 6
+a
+Failure: Invalid Command
+-------------------------------------------------------------------------------------------------
+Test Case 1:
+asdf
+Failure: Invalid Command
+-------------------------------------------------------------------------------------------------
+Test Case 2:
+R
+Machine Balance:
+$100 - 10
+$50 - 10
+$20 - 10
+$10 - 10
+$5 - 10
+$1 - 10
+R
+Machine Balance:
+$100 - 10
+$50 - 10
+$20 - 10
+$10 - 10
+$5 - 10
+$1 - 10
+W $2
+Success: Dispensed $2
+Machine Balance:
+$100 - 10
+$50 - 10
+$20 - 10
+$10 - 10
+$5 - 10
+$1 - 8
+R
+Machine Balance:
+$100 - 10
+$50 - 10
+$20 - 10
+$10 - 10
+$5 - 10
+$1 - 10
+-------------------------------------------------------------------------------------------------
+Test Case 3:
+W $1029
+Success: Dispensed $1029
+Machine Balance:
+$100 - 0
+$50 - 10
+$20 - 9
+$10 - 10
+$5 - 9
+$1 - 6
+I $10 $1 $20 $5
+$10 - 10
+$1 - 6
+$20 - 9
+$5 - 9
+I $100
+$100 - 0
+Q
